@@ -1,0 +1,163 @@
+/* Reseta alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8FAFC; /* Fundo branco levemente azulado */
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #CCE7FF; /* Azul pastel */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 40px; /* Ajuste conforme a altura desejada */
+    width: auto;
+  }
+  
+  /* Menu de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00509E; /* Tom de azul um pouco mais escuro */
+  }
+  
+  .active {
+    border-bottom: 2px solid #00509E;
+  }
+  
+  /* Container da Home */
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  /* Texto de introdução (Home) */
+  .texto-introducao {
+    max-width: 500px;
+  }
+  
+  .texto-introducao h1 {
+    font-size: 2rem;
+    color: #00509E;
+    margin-bottom: 1rem;
+  }
+  
+  .texto-introducao p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  /* Foto */
+  .foto-container img {
+    max-width: 300px;
+    border: 4px solid #CCE7FF;
+    border-radius: 8px;
+  }
+  
+  /* Seção de Projetos */
+  .projetos-container {
+    padding: 2rem;
+  }
+  
+  .projetos-container h1 {
+    font-size: 2rem;
+    color: #00509E;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projeto-item {
+    margin-bottom: 2rem;
+  }
+  
+  .projeto-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projeto-item p {
+    margin-bottom: 1rem;
+  }
+  
+  .projeto-item img {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 1rem;
+    border: 3px solid #CCE7FF;
+    border-radius: 4px;
+  }
+
+  .projeto-item ul {
+    margin-left: 20px; /* Ajusta o recuo da lista */
+    padding-left: 20px; /* Garante espaçamento interno adequado */
+    list-style-type: disc; /* Mantém os marcadores padrão */
+  }
+  
+  .projeto-item li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+    line-height: 1.5; /* Melhora a legibilidade */
+  }
+  
+  
+  .btn {
+    background-color: #00509E;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #00376D;
+  }
+  
+  /* Seção de Informações */
+  .info-container {
+    padding: 2rem;
+  }
+  
+  .info-container h1 {
+    font-size: 2rem;
+    color: #00509E;
+    margin-bottom: 1rem;
+  }
+  
+  .info-container p,
+  .info-container ul {
+    margin-bottom: 1rem;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #CCE7FF;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  

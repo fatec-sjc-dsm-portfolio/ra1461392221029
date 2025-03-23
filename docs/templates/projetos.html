@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meu Portfólio - Projetos</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo do Portfólio" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projetos.html" class="active">Projetos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projetos-container">
+      <h1>Projetos</h1>
+
+      <article class="projeto-item">
+        <h2>Py.nk</h2>
+        <p>
+          Baseado nos requisitos apresentados pelo cliente, a Py.nk está desenvolveu um sistema que, fomentado sobre metodologias ágeis, entrega um internet banking com funções básicas de funcionamento e uma interface de administração para gerenciamento da aplicação. Para a realização deste, três principais atores foram levantados:
+        </p>
+        <ul>
+          <li>
+            <strong>Cliente (usuário comum):</strong> Pode realizar cadastro, login, emissão de extrato bancário, movimentações em conta (depósito em caixa, saque e transferência) que geram, no momento da execução, um comprovante, além de requisitar atualização de dados e fechamento de conta.
+          </li>
+          <li>
+            <strong>Gerente de Agência:</strong> Realiza as operações de um usuário comum e, adicionalmente, pode aceitar ou recusar requisições de abertura de conta, alteração de dados dos clientes, realizar a conferência de depósitos em caixa e solicitar alteração de seus próprios dados ao gerente geral.
+          </li>
+          <li>
+            <strong>Gerente Geral:</strong> Tem acesso ao gerenciamento das agências, dos gerentes de agência, além de visualizar o montante total do banco, somando as funcionalidades dos outros perfis.
+          </li>
+        </ul>
+        <p>
+          Além dessas funcionalidades, o sistema contempla tratativas para questões específicas do ambiente bancário, como o arredondamento de casas decimais e o cálculo do rendimento de poupança.
+        </p>
+        <p>
+          <strong>Tecnologias Utilizadas:</strong> Flask, Python e SQL.
+        </p>
+        <img src="../imgs/pynk.png" alt="Imagem do Projeto Py.nk" />
+        <a href="https://github.com/Miguel-C1/API-1-DSM_22/tree/main" class="btn">Acessar Projeto</a>
+      </article>
+
+      <article class="projeto-item">
+        <h2>Nome do Projeto 2</h2>
+        <p>Descrição breve do projeto, tecnologias utilizadas, objetivo etc.</p>
+        <img src="../img/exemplo-projeto2.png" alt="Imagem do Projeto 2" />
+        <a href="https://link-para-o-projeto2" class="btn">Acessar Projeto</a>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Salve</p>
+  </footer>
+</body>
+</html>

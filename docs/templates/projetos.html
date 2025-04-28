@@ -18,46 +18,56 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="projetos-container">
-      <h1>Projetos</h1>
+      <h1 class="titulo-projetos">Projetos</h1>
 
-      <article class="projeto-item">
-        <h2>Py.nk</h2>
-        <p>
-          Baseado nos requisitos apresentados pelo cliente, a Py.nk está desenvolveu um sistema que, fomentado sobre metodologias ágeis, entrega um internet banking com funções básicas de funcionamento e uma interface de administração para gerenciamento da aplicação. Para a realização deste, três principais atores foram levantados:
-        </p>
-        <ul>
-          <li>
-            <strong>Cliente (usuário comum):</strong> Pode realizar cadastro, login, emissão de extrato bancário, movimentações em conta (depósito em caixa, saque e transferência) que geram, no momento da execução, um comprovante, além de requisitar atualização de dados e fechamento de conta.
-          </li>
-          <li>
-            <strong>Gerente de Agência:</strong> Realiza as operações de um usuário comum e, adicionalmente, pode aceitar ou recusar requisições de abertura de conta, alteração de dados dos clientes, realizar a conferência de depósitos em caixa e solicitar alteração de seus próprios dados ao gerente geral.
-          </li>
-          <li>
-            <strong>Gerente Geral:</strong> Tem acesso ao gerenciamento das agências, dos gerentes de agência, além de visualizar o montante total do banco, somando as funcionalidades dos outros perfis.
-          </li>
-        </ul>
-        <p>
-          Além dessas funcionalidades, o sistema contempla tratativas para questões específicas do ambiente bancário, como o arredondamento de casas decimais e o cálculo do rendimento de poupança.
-        </p>
-        <p>
-          <strong>Tecnologias Utilizadas:</strong> Flask, Python e SQL.
-        </p>
-        <img src="../imgs/pynk.png" alt="Imagem do Projeto Py.nk" />
-        <a href="https://github.com/Miguel-C1/API-1-DSM_22/tree/main" class="btn">Acessar Projeto</a>
-      </article>
+      <div class="projetos-grid">
 
-      <article class="projeto-item">
-        <h2>Nome do Projeto 2</h2>
-        <p>Descrição breve do projeto, tecnologias utilizadas, objetivo etc.</p>
-        <img src="../img/exemplo-projeto2.png" alt="Imagem do Projeto 2" />
-        <a href="https://link-para-o-projeto2" class="btn">Acessar Projeto</a>
-      </article>
+        <article class="card-projeto">
+          <img src="../imgs/pynk.png" alt="Imagem do Projeto Py.nk" class="imagem-projeto" />
+          <h2>Py.nk</h2>
+          <p class="descricao-projeto">
+            Sistema de internet banking desenvolvido com metodologias ágeis, oferecendo funcionalidades essenciais para clientes, gerentes de agência e gerentes gerais. Além das funções bancárias básicas, o sistema implementa controle de movimentações, gestão de contas e tratativas específicas como arredondamento bancário.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> Flask, Python e SQL.</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Product Owner (PO)</li>
+            <li>Desenvolvimento Back-end</li>
+            <li>Estruturação do modelo de banco de dados</li>
+          </ul>
+          <a href="https://github.com/Miguel-C1/API-1-DSM_22/tree/main" class="btn" target="_blank">Acessar Projeto</a>
+        </article>
+
+        <article class="card-projeto">
+          <img src="../imgs/gifs4.gif" alt="Imagem do Projeto TSwift" class="imagem-projeto" />
+          <h2>TSwift - Sistema de Inspeção de Entrada de Grãos</h2>
+          <p class="descricao-projeto">
+            Plataforma de controle de recebimento de grãos no setor agroindustrial, com cadastros de usuários, inspeções de entrada, geração de relatórios e controle de acessos diferenciados. O sistema foi desenvolvido seguindo o modelo de entregas ágeis em 4 sprints.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> ReactJS, Node.js, SQL, TypeScript e Prisma.</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Desenvolvimento Full Stack (Back-end com Node.js e Front-end com ReactJS)</li>
+            <li>Integração entre sistemas (API, banco de dados e front-end)</li>
+            <li>Controle de Acessos personalizados</li>
+            <li>Implementação de funcionalidades de relatórios gerenciais</li>
+            <li>Foco nas funcionalidades do sistema, com menor ênfase no design</li>
+          </ul>
+          <div class="botoes-projeto">
+            <a href="https://github.com/Miguel-C1/BACKEND-TSWIFT-API" class="btn" target="_blank">Acessar Backend</a>
+            <a href="https://github.com/Miguel-C1/FRONTEND-TSWIFT-API" class="btn" target="_blank">Acessar Frontend</a>
+          </div>
+        </article>
+
+      </div>
+
     </section>
   </main>
+
   <footer>
-    <p>Salve</p>
   </footer>
 </body>
 </html>

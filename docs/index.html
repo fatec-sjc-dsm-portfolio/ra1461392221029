@@ -4,34 +4,56 @@
   <meta charset="UTF-8" />
   <title>Meu Portfólio - Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <div class="logo">
-      <img src="img/logo.png" alt="Logo do Portfólio" />
+      <img src="./img/logo.png" alt="Logo do Portfólio" />
     </div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="templates/projetos.html">Projetos</a></li>
-        <li><a href="templates/informacoes.html">Informações</a></li>
+        <li><a href="./templates/projetos.html">Projetos</a></li>
+        <li><a href="./templates/pinformacoes.html">Informações</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section class="home-container">
-      <div class="texto-introducao">
-        <h1>Frase de Efeito</h1>
-        <p>Frase De efeito ainda não criada.</p>
+    <div class="perfil">
+      <img src="./imgs/foto.jpeg" alt="Minha Foto" />
+      <div class="perfil-texto">
+        <h1>Codificando Linhas</h1>
+        <p>E desbravando mundos através dos Dados.</p>
       </div>
-      <div class="foto-container">
-        <img src="imgs/foto.jpeg" alt="Minha Foto" />
-      </div>
+    </div>
+
+    <p class="bio">
+      Sou desenvolvedor focado em back-end, apaixonado por dados, inteligência artificial e soluções que otimizam processos. Inspirado pelos jogos de RPG, trago estratégia e criatividade para cada linha de código.
+    </p>
+
+    <!-- <div class="botoes-home">
+      <a href="./templates/projetos.html" class="btn">Ver Projetos</a>
+      <a href="./arquivos/curriculo.pdf" class="btn" target="_blank">Ver Currículo</a>
+      <a href="mailto:doxito007@gmail.com" class="btn">Contato</a>
+    </div> -->
+
+    <section class="skills">
+      <h2>Principais Tecnologias</h2>
+      <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>SQL</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Git</li>
+      </ul>
     </section>
   </main>
+
   <footer>
-    <p>Salve</p>
   </footer>
 </body>
 </html>

@@ -4,36 +4,78 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F8FAFC; /* Fundo branco levemente azulado */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
     color: #333;
   }
-  
   /* Cabeçalho */
   header {
-    background-color: #CCE7FF; /* Azul pastel */
+    background-color: #2980b9;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    height: 60px;
+    justify-content: space-between;
   }
+
+/* Perfil */
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.perfil img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #2980b9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.perfil-texto h1 {
+  font-size: 3rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.perfil-texto p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
   
   /* Logo */
-  .logo img {
-    height: 40px; /* Ajuste conforme a altura desejada */
-    width: auto;
+  header .logo img {
+    height: 50px;
   }
   
   /* Menu de navegação */
   nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
   }
   
+  nav ul li {
+    display: inline;
+  }
+  
+
   nav ul li a {
     text-decoration: none;
     color: #333;
@@ -42,7 +84,7 @@
   }
   
   nav ul li a:hover {
-    color: #00509E; /* Tom de azul um pouco mais escuro */
+    color: #d1e8ff;
   }
   
   .active {
@@ -56,6 +98,56 @@
     justify-content: space-around;
     padding: 2rem;
   }
+
+  /* HOME */
+  .bio {
+    font-size: 1rem;
+    max-width: 600px;
+    text-align: center;
+    color: #555;
+    margin-top: 30px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  .botoes-home {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills h2 {
+    color: #00509E;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .skills li {
+    background-color: #d1e8ff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #00509E;
+    font-size: 1rem;
+  }
   
   /* Texto de introdução (Home) */
   .texto-introducao {
@@ -63,14 +155,14 @@
   }
   
   .texto-introducao h1 {
-    font-size: 2rem;
-    color: #00509E;
+    font-size: 3rem; /* maior */
+    color: #00376D; /* tom de azul mais sóbrio */
     margin-bottom: 1rem;
   }
   
   .texto-introducao p {
-    font-size: 1.125rem;
-    line-height: 1.5;
+    font-size: 1.25rem;
+    color: #555;
   }
   
   /* Foto */
@@ -113,14 +205,14 @@
   }
 
   .projeto-item ul {
-    margin-left: 20px; /* Ajusta o recuo da lista */
-    padding-left: 20px; /* Garante espaçamento interno adequado */
-    list-style-type: disc; /* Mantém os marcadores padrão */
+    margin-left: 20px; 
+    padding-left: 20px; 
+    list-style-type: disc; 
   }
   
   .projeto-item li {
-    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
-    line-height: 1.5; /* Melhora a legibilidade */
+    margin-bottom: 5px; 
+    line-height: 1.5; 
   }
   
   
@@ -136,6 +228,140 @@
   .btn:hover {
     background-color: #00376D;
   }
+
+  .titulo-projetos {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00509E;
+  margin-bottom: 3rem;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card-projeto {
+  background-color: #ffffffcc;
+  border: 1px solid #d1e8ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+}
+
+.imagem-projeto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.descricao-projeto {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tecnologias {
+  font-size: 0.9rem;
+  color: #2980b9;
+  margin-bottom: 1.5rem;
+}
+
+.botoes-projeto {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Novo css */
+
+.titulo-projetos {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00509E;
+  margin-bottom: 3rem;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card-projeto {
+  background-color: #ffffffcc;
+  border: 1px solid #d1e8ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+}
+
+.imagem-projeto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.descricao-projeto {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tecnologias {
+  font-size: 0.9rem;
+  color: #2980b9;
+  margin-bottom: 1.5rem;
+}
+
+.botoes-projeto {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.acoes-projeto {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+  color: #333;
+}
+.acoes-projeto li {
+  margin-left: 1rem;
+  line-height: 1.4;
+}
+.acoes-projeto li:first-child {
+  margin-left: 0;
+  font-weight: 600;
+  color: #00509E;
+}
   
   /* Seção de Informações */
   .info-container {
@@ -155,9 +381,53 @@
   
   /* Rodapé */
   footer {
-    background-color: #CCE7FF;
+    background-color: #2980b9;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
   }
   
+
+/* Novo CSS Informações */
+.titulo-info {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00509E;
+  margin-bottom: 3rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.info-card {
+  background-color: #ffffffcc;
+  border: 1px solid #d1e8ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h2 {
+  color: #00509E;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 1rem;
+  color: #555;
+}

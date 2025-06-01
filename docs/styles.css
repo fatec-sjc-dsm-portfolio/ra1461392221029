@@ -3,39 +3,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
-    color: #333;
-  }
-  /* Cabeçalho */
-  header {
-    background-color: #2980b9;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+  color: #333;
+  padding-bottom: 70px; /* Espaço para o rodapé fixo */
+}
 
-/* Perfil */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px; /* Ajustado padding-bottom, pois o body já tem */
+}
 
+/* Cabeçalho */
+header {
+  background-color: #2980b9;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+header .logo img {
+  height: 50px;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f4f8; /* Cor mais clara para contraste com header azul */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d1e8ff;
+}
+
+.active {
+  border-bottom: 2px solid #00509E; /* Verifique se #00509E é visível o suficiente em #2980b9 */
+  /* Considerar uma cor mais clara para o active border se necessário */
+  /* color: #d1e8ff; Adicionar se quiser que o texto ativo também mude */
+}
+
+/* Perfil (Home) */
 .perfil {
   display: flex;
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px; /* Adicionado para espaçamento */
 }
 
 .perfil img {
@@ -58,341 +92,78 @@
   color: #555;
 }
 
-  
-  /* Logo */
-  header .logo img {
-    height: 50px;
-  }
-  
-  /* Menu de navegação */
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #d1e8ff;
-  }
-  
-  .active {
-    border-bottom: 2px solid #00509E;
-  }
-  
-  /* Container da Home */
-  .home-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
-  }
-
-  /* HOME */
-  .bio {
-    font-size: 1rem;
-    max-width: 600px;
-    text-align: center;
-    color: #555;
-    margin-top: 30px;
-    line-height: 1.6;
-    padding: 0 20px;
-  }
-  
-  .botoes-home {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .skills {
-    margin-top: 50px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .skills h2 {
-    color: #00509E;
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
-  
-  .skills ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .skills li {
-    background-color: #d1e8ff;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-weight: 600;
-    color: #00509E;
-    font-size: 1rem;
-  }
-  
-  /* Texto de introdução (Home) */
-  .texto-introducao {
-    max-width: 500px;
-  }
-  
-  .texto-introducao h1 {
-    font-size: 3rem; /* maior */
-    color: #00376D; /* tom de azul mais sóbrio */
-    margin-bottom: 1rem;
-  }
-  
-  .texto-introducao p {
-    font-size: 1.25rem;
-    color: #555;
-  }
-  
-  /* Foto */
-  .foto-container img {
-    max-width: 300px;
-    border: 4px solid #CCE7FF;
-    border-radius: 8px;
-  }
-  
-  /* Seção de Projetos */
-  .projetos-container {
-    padding: 2rem;
-  }
-  
-  .projetos-container h1 {
-    font-size: 2rem;
-    color: #00509E;
-    margin-bottom: 1.5rem;
-  }
-  
-  .projeto-item {
-    margin-bottom: 2rem;
-  }
-  
-  .projeto-item h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .projeto-item p {
-    margin-bottom: 1rem;
-  }
-  
-  .projeto-item img {
-    max-width: 400px;
-    display: block;
-    margin-bottom: 1rem;
-    border: 3px solid #CCE7FF;
-    border-radius: 4px;
-  }
-
-  .projeto-item ul {
-    margin-left: 20px; 
-    padding-left: 20px; 
-    list-style-type: disc; 
-  }
-  
-  .projeto-item li {
-    margin-bottom: 5px; 
-    line-height: 1.5; 
-  }
-  
-  
-  .btn {
-    background-color: #00509E;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #00376D;
-  }
-
-  .titulo-projetos {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #00509E;
-  margin-bottom: 3rem;
-}
-
-.projetos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-}
-
-.card-projeto {
-  background-color: #ffffffcc;
-  border: 1px solid #d1e8ff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.card-projeto:hover {
-  transform: translateY(-5px);
-}
-
-.imagem-projeto {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.descricao-projeto {
+/* Bio (Home) */
+.bio {
   font-size: 1rem;
+  max-width: 600px;
+  text-align: center;
   color: #555;
-  margin-bottom: 1rem;
+  /* margin-top: 30px; Removido pois perfil já tem margin-bottom */
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-.tecnologias {
-  font-size: 0.9rem;
-  color: #2980b9;
-  margin-bottom: 1.5rem;
-}
-
-.botoes-projeto {
+.botoes-home {
+  margin-top: 30px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Novo css */
-
-.titulo-projetos {
+/* Skills (Home) */
+.skills {
+  margin-top: 50px;
   text-align: center;
-  font-size: 2.5rem;
-  color: #00509E;
-  margin-bottom: 3rem;
-}
-
-.projetos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-}
-
-.card-projeto {
-  background-color: #ffffffcc;
-  border: 1px solid #d1e8ff;
-  border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s;
+  width: 100%; /* Para garantir que ocupe a largura se necessário */
+  max-width: 800px; /* Limitar a largura máxima */
 }
 
-.card-projeto:hover {
-  transform: translateY(-5px);
-}
-
-.imagem-projeto {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
+.skills h2 {
+  color: #00509E;
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-.descricao-projeto {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.tecnologias {
-  font-size: 0.9rem;
-  color: #2980b9;
-  margin-bottom: 1.5rem;
-}
-
-.botoes-projeto {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.acoes-projeto {
+.skills ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 1.5rem;
-  color: #333;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
-.acoes-projeto li {
-  margin-left: 1rem;
-  line-height: 1.4;
-}
-.acoes-projeto li:first-child {
-  margin-left: 0;
+
+.skills li {
+  background-color: #d1e8ff;
+  padding: 10px 15px;
+  border-radius: 20px;
   font-weight: 600;
   color: #00509E;
+  font-size: 1rem;
 }
-  
-  /* Seção de Informações */
-  .info-container {
-    padding: 2rem;
-  }
-  
-  .info-container h1 {
-    font-size: 2rem;
-    color: #00509E;
-    margin-bottom: 1rem;
-  }
-  
-  .info-container p,
-  .info-container ul {
-    margin-bottom: 1rem;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #2980b9;
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-    font-size: 0.9rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
 
-/* Novo CSS Informações */
+/* Estilos gerais de botão */
+.btn {
+  background-color: #00509E;
+  color: #fff;
+  padding: 0.75rem 1.5rem; /* Aumentei um pouco o padding para melhor toque */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block; /* Para garantir que padding funcione corretamente */
+  border: none; /* Caso seja usado em <button> */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00376D;
+}
+
+/* Seção de Projetos e Informações (Títulos e Grids) */
+.titulo-projetos,
 .titulo-info {
   text-align: center;
   font-size: 2.5rem;
@@ -400,27 +171,98 @@
   margin-bottom: 3rem;
 }
 
+.projetos-grid,
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Para info pode ser minmax(280px, 1fr) se preferir */
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem; /* Ajustei o padding lateral do grid */
+  width: 100%;
+  max-width: 1200px; /* Limitar a largura máxima do grid */
 }
 
+/* Cards de Projeto e Informação */
+.card-projeto,
 .info-card {
   background-color: #ffffffcc;
   border: 1px solid #d1e8ff;
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 25px; /* Aumentei um pouco o padding interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adicionado transition para box-shadow */
 }
 
+.card-projeto:hover,
 .info-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12); /* Sombra mais pronunciada no hover */
 }
 
+/* Específico para Card de Projeto */
+.imagem-projeto {
+  width: 100%;
+  max-width: 350px; /* Ajuste conforme necessário */
+  height: 200px; /* Altura fixa para consistência */
+  object-fit: cover; /* Para cobrir a área sem distorcer, pode ser 'contain' se preferir ver a imagem toda */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.descricao-projeto {
+  font-size: 0.95rem; /* Leve ajuste */
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tecnologias {
+  font-size: 0.9rem;
+  color: #2980b9;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.acoes-projeto {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+  color: #333;
+  text-align: left;
+  width: 100%; /* Ocupa a largura do card */
+  max-width: 300px; /* Limita a largura da lista de ações */
+}
+
+.acoes-projeto li {
+  margin-bottom: 0.3rem; /* Espaçamento entre itens */
+  line-height: 1.4;
+}
+
+.acoes-projeto li strong, /* Para o título "Minhas Ações:" */
+.acoes-projeto li:first-child { /* Mantendo sua lógica original se o primeiro item for sempre o título */
+  font-weight: 600;
+  color: #00509E;
+  display: block; /* Para que o negrito ocupe a linha toda se for o título */
+  margin-bottom: 0.5rem;
+}
+
+/* Se o primeiro li não for o título, use a classe para o título e ajuste */
+/* Ex: <ul class="acoes-projeto"> <li class="titulo-acoes"><strong>Minhas Ações:</strong></li> ... </ul> */
+
+
+.botoes-projeto {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: auto; /* Empurra os botões para o final do card se o card tiver altura variável */
+}
+
+
+/* Específico para Card de Informação */
 .info-card h2 {
   color: #00509E;
   font-size: 1.5rem;
@@ -430,4 +272,23 @@
 .info-card p {
   font-size: 1rem;
   color: #555;
+  line-height: 1.5;
 }
+
+/* Rodapé */
+footer {
+  background-color: #2980b9;
+  text-align: center;
+  padding: 15px 20px; /* Aumentei um pouco o padding */
+  color: #fff;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000; /* Para garantir que fique sobre outros elementos se houver */
+}
+
+/* ----- REMOVIDO - Estilos legados ou não utilizados ----- */
+/* .home-container, .texto-introducao, .foto-container, .projeto-item (substituído por card-projeto) */
+/* foram removidos pois parecem ser de uma estrutura anterior ou não estão em uso nos HTMLs fornecidos */
+/* Se algum deles for necessário, reavalie sua inclusão. */

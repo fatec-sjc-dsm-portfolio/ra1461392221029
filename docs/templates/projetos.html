@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <title>Meu Portfólio - Projetos</title>
+  <link rel="icon" href="../img/favicon.png" type="image/png">
   <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -14,7 +18,7 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="projetos.html" class="active">Projetos</a></li>
-        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
       </ul>
     </nav>
   </header>
@@ -26,10 +30,107 @@
       <div class="projetos-grid">
 
         <article class="card-projeto">
+          <img src="../imgs/antedeguemon.png" alt="Imagem do Projeto ANTEDEGUEMON" class="imagem-projeto" />
+          <h2>ANTEDEGUEMON - Extração de Insights</h2>
+          <p class="descricao-projeto">
+            Solução para automatizar a extração de informações relevantes de interações textuais em sistemas de
+            atendimento, utilizando Processamento de Linguagem Natural (PLN). O sistema visa extrair, classificar e
+            sumarizar dados de grandes volumes de interações, gerando insights estratégicos para otimizar o atendimento
+            ao cliente e fornecendo uma interface intuitiva para navegação e interpretação dos dados. O projeto aborda a
+            dificuldade na extração de dados, sumarização ineficiente, classificação inconsistente e falta de interface
+            intuitiva para análise.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> Processamento de Linguagem Natural (PLN), Python
+            (inferido).</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Scrum Master</li>
+            <li>Tratamento dos Dados no pré-processamento</li>
+            <li>Desenvolvimento de Modelos de Classificação</li>
+            <li>Desenvolvimento de Modelos de Tópicos</li>
+          </ul>
+          <a href="https://github.com/Miguel-C1/Antedeguemon-Documentation" class="btn" target="_blank">Acessar
+            Documentação</a>
+        </article>
+
+        <article class="card-projeto">
+          <img src="../imgs/noCloud_logo.png" alt="Imagem do Projeto NO CLOUD" class="imagem-projeto" />
+          <h2>NO CLOUD - Mapeamento de Nuvens</h2>
+          <p class="descricao-projeto">
+            Em parceria com a Visiona, este projeto desenvolveu uma aplicação mobile integrada à nuvem para mapeamento
+            automático de nuvens e sombras em imagens do satélite CBERS4A/WPM. O objetivo é fornecer máscaras de nuvens
+            de alta precisão, superando a limitação da ausência dessas máscaras que dificulta a análise de grandes
+            volumes de imagens. A solução utiliza modelos de Deep Learning, permitindo definir área e período de
+            interesse, acessar imagens, mapear nuvens/sombras automaticamente, visualizar resultados e baixar máscaras
+            vetoriais.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> Deep Learning, Mobile, Computação em Nuvem.</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Pré processamento das imagens .tiff para realizar o treinamento da IA</li>
+            <li>Treinamento da IA para detecção de nuvens, utilizando Yollo V8</li>
+            <li>Tratamento dos dados de saída da IA, aplicando filtros na imagem original .tiff</li>
+            <li>Criação das camadas das analises de nuvens e sombras</li>
+            <li>Desenvolvimento de uma API para disponibilizar os dados da IA</li>
+          </ul>
+          <a href="https://github.com/Miguel-C1/documentation" class="btn" target="_blank">Acessar Documentação</a>
+        </article>
+
+        <article class="card-projeto">
+          <img src="../imgs/lwsolution.jpg" alt="Imagem do Projeto LW SOLUTION" class="imagem-projeto" />
+          <h2>LW SOLUTION - Monitoramento Ambiental</h2>
+          <p class="descricao-projeto">
+            Projeto para expandir o portfólio da Tecsus com monitoramento ambiental de baixo custo e alta eficiência.
+            Desenvolveu estações meteorológicas para coletar dados (vento, chuva, umidade, temperatura, pressão) e
+            transmiti-los a um servidor central. Os dados são processados e exibidos em um portal online com função
+            educativa, explicando conceitos matemáticos e a importância do monitoramento na prevenção de desastres,
+            engajando alunos do ensino médio.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> IoT (Sensores), Backend (Servidor Central), Frontend
+            (Portal Online).</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Scrum Master</li>
+            <li>Tratamento dos dados do Banco de Dados não Relacional para a Relacional</li>
+            <li>Sistema de gerenciamento de estações meteorológicas</li>
+          </ul>
+          <div class="botoes-projeto">
+            <a href="https://github.com/Miguel-C1/BackEnd" class="btn" target="_blank">Acessar Backend</a>
+            <a href="https://github.com/Miguel-C1/FrontEnd" class="btn" target="_blank">Acessar Frontend</a>
+          </div>
+        </article>
+
+        <article class="card-projeto">
+          <img src="../imgs/logo9tech.png" alt="Imagem do Projeto NINE TECH" class="imagem-projeto" />
+          <h2>NINE TECH - Gerenciamento de Projetos </h2>
+          <p class="descricao-projeto">
+            Em parceria com a Siatt, este projeto desenvolveu um Sistema de Gerenciamento de Times para Projetos
+            Complexos. A solução permite macro e micro gerenciamento, abordando dificuldades como gestão ineficiente,
+            comunicação, monitoramento de progresso e interface pouco amigável. O software permite importar dados de
+            projetos via Excel, atribuir pacotes de trabalho, e acompanhar mudanças em projetos, pacotes, subpacotes e
+            tarefas, com foco em organização, acompanhamento em tempo real e colaboração.
+          </p>
+          <p class="tecnologias"><strong>Tecnologias:</strong> Web (Frontend/Backend), Gerenciamento de Dados (Excel
+            Import).</p>
+          <ul class="acoes-projeto">
+            <li><strong>Minhas Ações:</strong></li>
+            <li>Estruturação do Banco de Dados</li>
+            <li>Sistema de acompanhamento de progressão das Tarefas</li>
+            <li>Sistema de Importação de dados do Excel </li>
+          </ul>
+          <div class="botoes-projeto">
+            <a href="https://github.com/Miguel-C1/nine-tech-back" class="btn" target="_blank">Acessar Backend</a>
+            <a href="https://github.com/Miguel-C1/nine-tech-front" class="btn" target="_blank">Acessar Frontend</a>
+          </div>
+        </article>
+
+        <article class="card-projeto">
           <img src="../imgs/pynk.png" alt="Imagem do Projeto Py.nk" class="imagem-projeto" />
           <h2>Py.nk</h2>
           <p class="descricao-projeto">
-            Sistema de internet banking desenvolvido com metodologias ágeis, oferecendo funcionalidades essenciais para clientes, gerentes de agência e gerentes gerais. Além das funções bancárias básicas, o sistema implementa controle de movimentações, gestão de contas e tratativas específicas como arredondamento bancário.
+            Sistema de internet banking desenvolvido com metodologias ágeis, oferecendo funcionalidades essenciais para
+            clientes, gerentes de agência e gerentes gerais. Além das funções bancárias básicas, o sistema implementa
+            controle de movimentações, gestão de contas e tratativas específicas como arredondamento bancário.
           </p>
           <p class="tecnologias"><strong>Tecnologias:</strong> Flask, Python e SQL.</p>
           <ul class="acoes-projeto">
@@ -45,7 +146,9 @@
           <img src="../imgs/gifs4.gif" alt="Imagem do Projeto TSwift" class="imagem-projeto" />
           <h2>TSwift - Sistema de Inspeção de Entrada de Grãos</h2>
           <p class="descricao-projeto">
-            Plataforma de controle de recebimento de grãos no setor agroindustrial, com cadastros de usuários, inspeções de entrada, geração de relatórios e controle de acessos diferenciados. O sistema foi desenvolvido seguindo o modelo de entregas ágeis em 4 sprints.
+            Plataforma de controle de recebimento de grãos no setor agroindustrial, com cadastros de usuários, inspeções
+            de entrada, geração de relatórios e controle de acessos diferenciados. O sistema foi desenvolvido seguindo o
+            modelo de entregas ágeis em 4 sprints.
           </p>
           <p class="tecnologias"><strong>Tecnologias:</strong> ReactJS, Node.js, SQL, TypeScript e Prisma.</p>
           <ul class="acoes-projeto">
@@ -70,4 +173,5 @@
   <footer>
   </footer>
 </body>
+
 </html>

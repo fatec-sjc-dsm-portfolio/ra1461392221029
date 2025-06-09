@@ -10,14 +10,14 @@ body {
   margin: 0;
   background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
   color: #333;
-  padding-bottom: 70px; /* Espaço para o rodapé fixo */
+  padding-bottom: 70px;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 20px; /* Ajustado padding-bottom, pois o body já tem */
+  padding: 50px 20px 20px; 
 }
 
 /* Cabeçalho */
@@ -47,7 +47,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #f0f4f8; /* Cor mais clara para contraste com header azul */
+  color: #f0f4f8; 
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -57,19 +57,18 @@ nav ul li a:hover {
 }
 
 .active {
-  border-bottom: 2px solid #00509E; /* Verifique se #00509E é visível o suficiente em #2980b9 */
-  /* Considerar uma cor mais clara para o active border se necessário */
-  /* color: #d1e8ff; Adicionar se quiser que o texto ativo também mude */
+  border-bottom: 2px solid #00509E; 
 }
 
+
 /* Perfil (Home) */
-.perfil {
+.perfil { 
   display: flex;
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px; /* Adicionado para espaçamento */
+  margin-bottom: 30px; 
 }
 
 .perfil img {
@@ -116,8 +115,8 @@ nav ul li a:hover {
   margin-top: 50px;
   text-align: center;
   padding: 20px;
-  width: 100%; /* Para garantir que ocupe a largura se necessário */
-  max-width: 800px; /* Limitar a largura máxima */
+  width: 100%;
+  max-width: 800px;
 }
 
 .skills h2 {
@@ -145,21 +144,25 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-/* Estilos gerais de botão */
 .btn {
   background-color: #00509E;
   color: #fff;
-  padding: 0.75rem 1.5rem; /* Aumentei um pouco o padding para melhor toque */
+  padding: 0.75rem 1.5rem; 
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
-  display: inline-block; /* Para garantir que padding funcione corretamente */
-  border: none; /* Caso seja usado em <button> */
+  display: inline-block; 
+  border: none; 
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: #00376D;
+}
+
+.projetos-container,
+.info-container {
+  width: 100%;
 }
 
 /* Seção de Projetos e Informações (Títulos e Grids) */
@@ -174,11 +177,13 @@ nav ul li a:hover {
 .projetos-grid,
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Para info pode ser minmax(280px, 1fr) se preferir */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
   gap: 2rem;
-  padding: 0 1rem; /* Ajustei o padding lateral do grid */
+  padding: 0 1rem; 
   width: 100%;
-  max-width: 1200px; /* Limitar a largura máxima do grid */
+  max-width: 1200px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards de Projeto e Informação */
@@ -187,33 +192,33 @@ nav ul li a:hover {
   background-color: #ffffffcc;
   border: 1px solid #d1e8ff;
   border-radius: 12px;
-  padding: 25px; /* Aumentei um pouco o padding interno */
+  padding: 25px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s; /* Adicionado transition para box-shadow */
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .card-projeto:hover,
 .info-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12); /* Sombra mais pronunciada no hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
 }
 
 /* Específico para Card de Projeto */
 .imagem-projeto {
   width: 100%;
-  max-width: 350px; /* Ajuste conforme necessário */
-  height: 200px; /* Altura fixa para consistência */
-  object-fit: cover; /* Para cobrir a área sem distorcer, pode ser 'contain' se preferir ver a imagem toda */
+  max-width: 350px;
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
 .descricao-projeto {
-  font-size: 0.95rem; /* Leve ajuste */
+  font-size: 0.95rem; 
   color: #555;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -232,33 +237,29 @@ nav ul li a:hover {
   margin: 1rem 0 1.5rem;
   color: #333;
   text-align: left;
-  width: 100%; /* Ocupa a largura do card */
-  max-width: 300px; /* Limita a largura da lista de ações */
+  width: 100%; 
+  max-width: 300px; 
 }
 
 .acoes-projeto li {
-  margin-bottom: 0.3rem; /* Espaçamento entre itens */
+  margin-bottom: 0.3rem;
   line-height: 1.4;
 }
 
-.acoes-projeto li strong, /* Para o título "Minhas Ações:" */
-.acoes-projeto li:first-child { /* Mantendo sua lógica original se o primeiro item for sempre o título */
+.acoes-projeto li strong, 
+.acoes-projeto li:first-child { 
   font-weight: 600;
   color: #00509E;
-  display: block; /* Para que o negrito ocupe a linha toda se for o título */
+  display: block; 
   margin-bottom: 0.5rem;
 }
-
-/* Se o primeiro li não for o título, use a classe para o título e ajuste */
-/* Ex: <ul class="acoes-projeto"> <li class="titulo-acoes"><strong>Minhas Ações:</strong></li> ... </ul> */
-
 
 .botoes-projeto {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: auto; /* Empurra os botões para o final do card se o card tiver altura variável */
+  margin-top: auto;
 }
 
 
@@ -279,16 +280,114 @@ nav ul li a:hover {
 footer {
   background-color: #2980b9;
   text-align: center;
-  padding: 15px 20px; /* Aumentei um pouco o padding */
+  padding: 15px 20px; 
   color: #fff;
   font-size: 0.9rem;
   position: fixed;
   width: 100%;
   bottom: 0;
-  z-index: 1000; /* Para garantir que fique sobre outros elementos se houver */
+  z-index: 1000; 
 }
 
-/* ----- REMOVIDO - Estilos legados ou não utilizados ----- */
-/* .home-container, .texto-introducao, .foto-container, .projeto-item (substituído por card-projeto) */
-/* foram removidos pois parecem ser de uma estrutura anterior ou não estão em uso nos HTMLs fornecidos */
-/* Se algum deles for necessário, reavalie sua inclusão. */
+@media (max-width: 768px) {
+
+  body {
+    padding-bottom: 60px; 
+  }
+  
+  main {
+    padding: 30px 15px 20px; 
+  }
+
+  /* --- Cabeçalho e Navegação --- */
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 15px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  nav ul li a {
+    font-size: 0.9rem; 
+  }
+
+  /* --- Página Home --- */
+  .perfil {
+    flex-direction: column; 
+    text-align: center;  
+    gap: 20px;
+  }
+
+  .perfil img {
+    width: 150px; 
+    height: 150px;
+  }
+
+  .perfil-texto h1 {
+    font-size: 2.2rem; 
+  }
+
+  .perfil-texto p {
+    font-size: 1rem; 
+  }
+
+  .bio {
+    padding: 0; 
+  }
+  
+  .skills ul li {
+    font-size: 0.9rem; 
+    padding: 8px 12px;
+  }
+
+
+  /* Títulos das seções */
+  .titulo-projetos,
+  .titulo-info {
+    font-size: 2rem; 
+    margin-bottom: 2rem;
+  }
+
+
+  .projetos-grid,
+  .info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0; 
+  }
+  
+  /* Ajustes nos cards */
+  .card-projeto h2 {
+      font-size: 1.1rem;
+  }
+  .descricao-projeto {
+      font-size: 0.9rem; 
+  }
+
+  /* --- Rodapé --- */
+  footer {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+    .perfil-texto h1 {
+        font-size: 1.8rem;
+    }
+    
+    .titulo-projetos,
+    .titulo-info {
+        font-size: 1.7rem;
+    }
+    
+    .projetos-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

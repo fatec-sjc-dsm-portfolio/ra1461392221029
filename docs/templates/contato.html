@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meu Portfólio - Contato</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../imgs/logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html"><img src="../imgs/logo.png" alt="Logo do Portfólio" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contato-container">
+      <h1 class="titulo-contato">Entre em Contato</h1>
+      <p class="subtitulo-contato">
+        Adoraria conectar com você! Seja para discutir projetos, oportunidades ou apenas trocar ideias.
+      </p>
+
+      <div class="contato-grid">
+        <div class="contato-card">
+          <a href="https://www.linkedin.com/in/miguel-carvalho-soares-722b161a3/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin contato-icone"></i>
+            <h2>LinkedIn</h2>
+            <p>Miguel Carvalho Soares</p>
+          </a>
+        </div>
+
+        <div class="contato-card">
+          <a href="mailto:doxito007@gmail.com">
+            <i class="fas fa-envelope contato-icone"></i>
+            <h2>E-mail</h2>
+            <p>doxito007@gmail.com</p>
+          </a>
+        </div>
+
+        <div class="contato-card">
+          <a href="https://github.com/Miguel-C1" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github contato-icone"></i>
+            <h2>GitHub</h2>
+            <p>Miguel-C1</p>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <span id="currentYear"></span> Miguel Carvalho Soares. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/miguel-carvalho-soares-722b161a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Miguel-C1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:doxito007@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
